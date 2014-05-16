@@ -2,6 +2,7 @@ FROM ubuntu:13.10
 
 RUN apt-get update && apt-get -y install apache2
 
+ADD service /etc/minipaas
 ADD code /var/www
 
 ENV minipaas_version 1
